@@ -1,0 +1,72 @@
+
+
+.padre {
+    display: flex;
+    flex-direction: column;
+    width: 5%;
+  
+
+}
+
+img{
+    width: 35%;
+    position: relative;
+    left: 80%;
+}
+
+.nav1, .subitems{
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav1 a:hover{
+    background-color: blueviolet;
+
+}
+
+ul{
+    display:none;
+}
+
+.subitems a:hover{
+             background-color:orange;
+
+}
+
+.menu:hover ul{
+    display: block;
+   
+
+}
+
+img:active {
+    background-color: red;
+    
+}
+
+
+.nos:hover .subitems {
+    display: block;
+    transition-duration: 1.5;
+}
+
+.dona:hover .subitems{
+    display: block;
+    transition-duration: 1.5;
+}
+
+.col:hover  .subitems{
+    display: block;
+    transition-duration: 1.5;
+}
+.cont:hover  .subitems{
+    display: block;
+    transition-duration: 1.5;
+}
