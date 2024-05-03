@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,600&display=swap');
+
+.nav-barra{
+    display: none;
+}
+
+.menu-hamburguesa{
+    display: none;
+}
+
+.fotoportada img, .imagenizq img{
+    width: 100%;
+    margin: 0;
+    display: flex;
+}
+.contenedor{
+    background-color: #ADE3EF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.aporte{
+    background-color: #81B04A ;
+    margin: 0;
+    width: 100%;
+    height: 30vh;
+    
+   
+}
+.aporte h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #ffcc66;
+    text-shadow: 4px 1px black;
+}
+.aporte p{
+    text-align: center;
+    text-indent: 50px;
+    margin:10px 20px;
+    font-size: 16px;
+}
+.mercadopago, .transferencia{
+    background-color: #DFFBFF;
+    width: 55%;
+    padding: 20px 40px 10px 40px;
+    border-radius: 4em;
+    margin: 0 auto;
+}
+h4{
+    text-align: center;
+}
+.pie{
+    margin: 0;
+    background-color: #C21517;
+    height: 4em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 3em;  
+}
+.foot a img{
+    height: 3em;
+}
+
+
+    
+
+@media (max-width: 900px){
+    .nav-barra, .nav i{
+        display: block;
+    }
+    .nav-menu{
+        flex-direction: column;
+        background-color: #e9ebef;
+        position:fixed;
+        left:0;
+        top: 48px;
+        width:100%;
+        padding:05px 0;
+        align-items: center;
+        height: calc(100%-48px);
+        overflow-y: auto;
+        display: block;
+        left:100%;
+        
+    }
+    .menu-hamburguesa:checked + .nav-menu{
+        left:0%
+    }*/
+    .nav ul li{
+        line-height: 0px;
+    }
+    .nav ul li a{
+        font-size: 18px;
+        padding:10px
+    }
+    .header img{
+        width: 120px;
+        margin-left: 20px;
+        padding-top: 2px;
+        display: flex;
+        align-items: center;
+    }
+    .aporte{
+        height: fit-content;
+    }
+    .aporte h1{
+        font-size: 22px;
+    }
+    .aporte p{
+        text-align: justify;
+        text-indent: 20px;
+        margin:0px 10px;
+        font-size: 14px;
+    }
+    .contenedor{
+        grid-template-columns: 1fr ;
+        
+    }
+    .imagenizq{
+       width: 70%;
+       margin: auto;
+       
+       
+        
+    }
+    .mercadopago, .transferencia{
+        width: 30%;
+        padding: 20px 50px 10px 50px;
+        border-radius: 4em;
+        margin: 10px auto;
+    }
+    .mercadopago img{
+        width: 80%;
+    }
+    .transferencia img{
+        width: 30%;
+    }
+    h3{
+        font-size: 18px;
+    }
+    h2{
+        font-size:20px ;
+    }
+    h4{
+        text-align: center;
+        font-size: 16px;
+    } 
+    
+    .pie{
+        margin: 0;
+        background-color: #C21517;
+    }
+    .pie{
+        height: 3em;
+        padding: 2em;  
+    }
+    .foot a img{
+        height: 1.8em;
+    }
+    
+    
+}  
+@media (max-width:600px){
+    .nav ul li a{
+        font-size: 13px;
+        padding:5px
+    }
+    .nav-menu{
+        margin-left: 70%;
+        width:30%;
+    }
+    .aporte h1{
+        font-size: 20px;
+    }
+    .aporte p{
+        font-size: 12px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    h2{
+        font-size:18px ;
+    }
+    h4{
+        text-align: center;
+        font-size: 14px;
+    } 
+    
+    .pie{
+        height: 2em;
+        padding: 1em;  
+    }
+    .foot a img{
+        height: 1.5em;
+    }
+    .foot p{
+        font-size: 14px;
+    }
+    
+}  
+
+
+
+
+

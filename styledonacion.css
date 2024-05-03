@@ -1,0 +1,557 @@
+/*Se importó una fuente tipográfica*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+  margin: 0;
+  /*eliminar el margen*/
+  padding: 0;
+  /*eliminar el espacio-margen interior*/
+  box-sizing: border-box;
+  /*el tamaño del contenedor se mantiene estable*/
+  text-decoration: none;
+  /*eliminar decoración en los textos*/
+  list-style: none;
+  /*elimina decoración de las listas*/
+}
+
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Poppins";
+}
+
+img {
+  max-width: 100%;
+}
+
+/*Consigna: Poseer una estructura HTML maquetada con Flexbox y/o Grid.*/
+/*Definir las áreas*/
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    ".hero"
+    "main"
+    "footer"
+  ;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;/*divide el contenedor en dos columnas de igual tamaño*/
+
+  align-items: center;
+  /*centra verticalmente*/
+  justify-content: center;
+  /*centra horizontalmente*/
+}
+
+
+/*header*/
+.img-logo {
+  max-width: 3em;
+  vertical-align: middle;
+  /*La imagen se ubica en el centro del contenedor*/
+}
+
+header {
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  /*(sombra parte inferior)*/
+  height: 70px;
+}
+
+.header-logo img {
+  max-width: 8em;
+  vertical-align: middle;
+  margin: 0 1em;
+}
+
+/*Consigna: Utilizar al menos una animación, transformación o una transición.*/
+.padre {
+  margin-top: 2%;
+  max-height: 0px;
+  max-width: 0%;
+
+  li {
+    position: relative;
+  }
+
+
+  ul {
+    display: inline-flex;
+  }
+
+  a {
+    border: 4px outset black;
+    text-decoration: none;
+    color: black;
+    margin-left: 25px;
+    padding: 2%;
+    font-family: "Poppins";
+    font-style: unset;
+    margin-top: -10%;
+    background-color: gainsboro;
+
+  }
+
+  li {
+    list-style: none;
+  }
+}
+
+.nosotros {
+  list-style: none;
+  text-decoration: none;
+  position: relative;
+}
+
+.nosotros ul>li{
+  margin-top: 10%;
+}
+
+.listnosotros ul {
+  display: block;
+  margin-top: 0% ;
+  padding: 0.5%;
+  width: 200%;
+}
+
+.listnosotros>ul li {
+  display: none;
+  position: relative;
+
+
+}
+
+.listnosotros li {
+  list-style: none;
+  text-decoration: none;
+ 
+
+}
+
+.nosotros li>a:hover {
+  background-color: #F0830E;
+  position: relative;
+}
+
+.nosotros:hover li {
+  display: block;
+  position: relative;
+
+}
+
+.listnosotros li>a:hover {
+  background-color: #F0830E;
+  position: relative;
+
+
+}
+
+/* hover  y estilos para la pestaña donacion */
+.dona {
+  position: relative;
+}
+
+.dona ul {
+  display: block;
+  position: relative;
+
+}
+
+
+.dona ul>li {
+  position: relative;
+  margin-top: 30%;
+  width: 450%;  
+}
+
+.dona:hover li {
+  display: block;
+
+}
+
+.dona li>a:hover {
+  background-color: #C21518;
+}
+
+.listdona li>a:hover {
+  background-color: #C21518;
+  position: relative;
+
+
+}
+
+.listdona li {
+  display: none;
+  position: relative;
+  
+
+
+
+  a {
+    background-color: gainsboro;
+  }
+}
+
+
+/* hover y estilos para colaboracion */
+.cola {
+  position: relative;
+}
+
+.cola ul {
+  display: block;
+  position: relative;
+}
+
+.cola ul>li {
+  position: relative;
+  margin-top: 15%;
+  width: 150%;
+
+}
+
+.cola:hover li {
+  display: block
+}
+
+.cola li>a:hover {
+  background-color: #81B04B;
+}
+
+.listcola li {
+  display: none;
+  position: relative;
+  width: 100%;
+
+  a {
+    background-color: gainsboro;
+  }
+}
+
+/* hover y estilos para contacto */
+.conta {
+  position: relative;
+}
+
+.conta ul {
+  display: block;
+  position: relative;
+
+  li {
+    position: relative;
+    margin-top: 15%;
+    width: 200%;
+  }
+}
+
+.conta:hover li {
+  display: block;
+
+}
+
+.conta li>a:hover {
+  background-color: #FBDD7B;
+}
+
+.listconta li {
+  display: none;
+  position: relative;
+
+  a {
+    background-color: gainsboro;
+  }
+
+}
+
+/*hero*/
+.banner-imagen {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.banner-texto {
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  height: 40vh;
+  background-color: #C21518;
+}
+
+.banner-imagen,
+.banner-texto {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.banner-texto h3 {
+  color: #FBDD7B;
+}
+
+.banner-texto p {
+
+  color: #ffffff;
+  padding: 0 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p,
+.contenido-texto ul {
+  font-size: .8em;
+}
+
+
+/*main*/
+.contenido-video iframe {
+  width: 100%;
+  height: 360px;
+
+}
+
+.contenido-texto,
+.contenido-imagen,
+.contenido-video {
+  height: 100%;
+  width: 100%;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.contenido-imagen img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+.contenido-texto,
+.contenido-imagen {
+
+  padding: 3em;
+}
+
+.contenido-texto p {
+  text-align: justify;
+}
+
+.extraccion,
+.contenido-titulo2,
+.requisitos,
+.inscrip-lista {
+  color: #C21518;
+}
+
+.contenido-texto ul {
+  text-align: left;
+  margin: 1em 0;
+}
+
+.contenido-texto ul li i {
+  margin-right: 5px;
+}
+
+.inscripcion {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #F9F0E8;
+
+}
+
+.inscripcion p {
+  padding: 0 3em;
+}
+
+.inscrip-lista span {
+  font-weight: bold;
+}
+
+.inscrip-lista a:hover {
+  color: #81B04B;
+  text-decoration: underline;
+}
+
+
+/* footer */
+footer {
+  background-color: #C21518;
+  padding: 2em 0;
+}
+
+.footer-logo img {
+  max-width: 20vh;
+  vertical-align: middle;
+  margin-top: 15px;
+}
+
+.redes-sociales,
+.footer-logo {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rrss,
+.rrss-iconos {
+  display: flex;
+  gap: 1.5em;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.rrss li a,
+.rrss-iconos li a {
+  color: #000;
+}
+
+.rrss li a {
+  font-weight: 600;
+}
+
+.rrss li a:hover,
+.rrss-iconos li a:hover {
+  color: #FBDD7B;
+
+}
+
+.rrss-iconos {
+  display: none;
+}
+
+/*Media Query: Tablet*/
+@media (max-width: 900px) {
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .nh {
+    font-size: 0.9em;
+  }
+
+  .nosotros {
+    font-size: 0.9em;
+  }
+
+  /*hero*/
+  .banner-texto h3 {
+    font-size: 1.5em;
+  }
+
+  /*footer*/
+  .rrss {
+    display: none;
+  }
+
+  .rrss-iconos {
+    display: flex;
+    font-size: 1.3em;
+  }
+
+  .footer-logo img {
+    max-width: 15vh;
+  }
+
+}
+
+
+/*Media Query: Celular*/
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .historia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .nos {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #ahijados {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 75%;
+  }
+
+  /*footer*/
+  .rrss {
+    display: none;
+  }
+
+  .rrss-iconos {
+    display: flex;
+    font-size: 1.3em;
+  }
+
+  .footer-logo img {
+    max-width: 15vh;
+  }
+
+  .contenido-texto,
+  .contenido-imagen,
+  .contenido-video {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .donacion-imagen {
+    order: 1;
+  }
+
+  .donacion-texto {
+    order: 2;
+  }
+
+  .extraccion-video {
+    order: 3;
+  }
+
+  .extraccion {
+    order: 4;
+  }
+
+  .requisito-imagen {
+    order: 5;
+  }
+
+  .requisito-texto {
+    order: 6;
+  }
+
+  .inscripcion {
+    order: 7;
+  }
+
+  .inscripcion-texto {
+    order: 8;
+  }
+
+  .inscripcion-imagen {
+    order: 9;
+  }
+
+
+
+
+
+}

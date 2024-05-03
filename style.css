@@ -1,333 +1,163 @@
-header{
+*{
+    margin: 0; /*eliminar el margen*/
+    padding: 0; /*eliminar el espacio-margen interior*/
+    box-sizing: border-box; /*el tamañao del contenedor se mantiene estable/
+    text-decoration: none; /*eliminar decoracion en los textos*/
+    list-style: none; /*elimina decoracion de las listas*/
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap')
+
+}
+
+
+
+    
+    header{
+    height: 150%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template: 50% /100px;
+    background-color: #81B04B;
 }
-
-.portada{
-    width: 35%;
+ 
+nav{
+  grid-column:1;
+  grid-row:1
+}
+    .padre{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        
+    
+        li{
+            list-style: none;
+            
+        }
+    
+        a{
+            text-decoration: none;
+            color: black;
+            border: 2px solid rgb(49, 75, 20);
+            border-radius: 3px;
+            position: relative;
+            padding: 3px;
+           
+        }
+        
+    }
+    
+.inicio{
+    padding: 7px;
+    
+} 
+.nosotros{ 
+        list-style: none;
+        text-decoration: none;
+        height: 5%;
+        padding: 5px;
+       
+    
+    }
+    .listnosotros li{
+            border:solid 1px orange;
+            border-radius: 4px;
+            list-style: none;
+            text-decoration: none;
+            display: none;
+            position: relative;
+            width: 35%;
+         
+    
+        a{
+            text-decoration: none;
+        }
+            
+      }
+    
+    .nosotros li>a:hover  {
+        background-color: orange;
+      }
+    
+      .nosotros:hover li{
+        display: block;
+      }
+    
+      .listnosotros li>a:hover{
+        background-color: orange;
+        
+      }
+    
+    /* hover  y estilos para la pestaña donacion */
+.dona{
+   max-height: 5%;
+    padding: 7px;
     position: relative;
-    left:15%;
-
-}
-
-.menu {
- max-height: 35px;
- top:25%;
- position: relative;
- right: 20%;
-
-    
-    
-}
-
-/*display flex para el menu principal */
-.nav1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: beige;
-    width: auto;
-    
-    
-}
-
-a{
-    font-size: 1.2vw;
-}
-
-/* estilos para las cajas contenedoras */
-.nav1>li>a {
-    border-radius: 3px;
-    padding: 5px;
-    margin: 5px;
-    text-decoration: none;
-   
-    
-    
-}
-
-/* estilos para las cajas contenedoras */
-ul ul a {
-    border-radius: 3px;
-    text-decoration: none;
-    padding: 5px;
-
-
-}
-
-/* Dandole flex y formato a los submenus*/
-
-.subitems {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    row-gap: 10px;
-    align-items: baseline;
-    margin-left: -30px;
-    margin-top: 10px;
-    width: 35px;
-
-    
-}
-
-/* Display:none para que los submenus no esten a la vista, salvo que se los seleccione*/
-.subitems li a {
-    display: none;
-    background-color: lightcoral;
-    height: auto;
-}
-
-/* display:flex, aplicado a la la lista del menu principal, para que al pasar por arriba aparezcan los submenus*/
-.nos:hover li a {
-    display: flex;
-    z-index: 5;
-    background-color: orange;
-    transition-duration: 1.5;
-
-}
-.nos:hover a{
-    background-color: orange;
-    transition-duration: 1.5;
-}
-
-.dona:hover li a {
-    display: flex;
-    transition-duration: 3;
-    touch-action: cross-slide-x;
-
-}
-
-.col:hover li a {
-    display: flex;
-
-}
-
-.cont:hover li a {
-    display: flex;
-
-}
-/*fin de los hover para el menu principal*/
-
-/* hover para que al pasar por los nombres de las listas tomen un color de fondo azul */
-.subitems li:hover {
-    background-color: blue;
-}
-
-/* hover para que al pasar por los nombres de las listas tomen un color de fondo lightgreen*/
-ul li a:hover{
-    background-color:lightgreen;
-}
-
-/* formato para nuestra historia */
-
-.historia {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.nhistoria{
-        background-color: rgba(235, 156, 9, 0.993);
-        text-align: center;
-}
-.nhistoria h1{
-    position: relative;
-    color: white;
-    top:5%
-}
-
-.nhistoria h1 b{
-    color: rgb(233, 62, 0);
-}
-
-p{
-    color:rgb(233, 62, 0);
-    text-align: justify;
-    margin:15%
-}
-
-.manos{
-    position: relative;
-    width: 100%;
-    
-}
-
-img{
-    grid-template-columns: max-content;
-    width: 100%;
-    height: 100%;
-}
-
-.nobjetivos{
-    display:grid;
-    grid-template-columns: 50% 50%;
-  
-}
-.objetivos{
-    grid-column-start: 1;
-    font-size: 1.5vw;
-    text-align: justify;
-}
-
-#objetivos{
-    position: relative;
-    color:red;
-    top:5%;
-
-}
-
-#objetivos b{
-   
-    color:rgb(185, 243, 50)
-}
-
-#objetivos{
-    text-align: center;
-    
-}
-
-.grilla{
-    background-color: rgb(128, 177, 70,100%) ;
-}
-
-#ahijado{
-    display:grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    width:75%;
-    margin-left: 15%;
-    margin-bottom: 5%;
-
-}
-
-#ahijados{
-    text-align: center;
-    background-color:#F9DB79;
-   height: 100%;
    
 }
 
-.ahijado1{
-    width: 75%;
-    height: auto;
-    position: relative;
-    margin: 0% 5% 0% 15%; 
-    
-}
-.ahijado2{
-    width: 75%;
-    height: autp;
-    position: relative;
-    margin: 0% 0% 0% 10%;
-}
-.ahijado3{
-    width: 75%;
-    height:auto;
-    position: relative;
-    margin: 0% 0% 0% 5%;
-    
-}
+    .dona:hover li{
+        display: block;
+       
+      }
 
-.ahijado4{
-    width: 75%;
-    height: auto;
-    position: relative;
-    margin: 0% 5% 0% 0%;
+      .dona li>a:hover{
+        background-color: red;
+        position: relative;
+      }
     
-}
-
-.ahijado5{
-    width: 75%;
-    height: auto;
-    position: relative;
-    margin: 0% 5% 0% 15%; 
-    
-}
-.ahijado6{
-    width: 75%;
-    height: autp;
-    position: relative;
-    margin: 0% 0% 0% 10%;
-}
-.ahijado7{
-    width: 75%;
-    height:auto;
-    position: relative;
-    margin: 0% 0% 0% 5%;
-    
-}
-
-.ahijado8{
-    width: 75%;
-    height: auto;
-    position: relative;
-    margin: 0% 5% 0% 0%;
-    
-}
-
-#ahijado2{
-    display:grid;
-    background-color:#F9DB79;
-    grid-template-columns: 25% 25% 25% 25%;
-    background-color:#F9DB79 ;
-    width: 75%;
-    margin-left: 15%;
-}
-
-.footer{
-    background-color:#C11517 ;
-    height: 50%;
-    display: grid;
-    grid-template-columns: 35% 35% 35%;
-   
-                        
-}
-
-.datos{
-    font-size: 1vw;
+      .listdona li{
+        display: none;
+        position: relative;
+        border: 1px solid red;
+        border-radius: 3px;
+        width: 65%;
+      }
     
     
-}
-.mail{
-    text-decoration: none;
-    color:black;
-    position: relative;
-    top: 35%;
-
+      /* hover y estilos para colaboracion */
+.cola{
+    padding: 7px;
 }
 
-.tel{
-    color:black;
-  
+      .cola:hover li{
+        display: block;
+        position: relative;
+      
+       
+      }
     
-}
+      .cola li>a:hover{
+        background-color: red;
+      }
+    
+      .listcola li{
+        display: none;
+        position: re;
+        border: 1px solid red;
+        border-radius: 3px;
+        width: 75%;
+      }
+    
+    /* hover y estilos para contacto */
+    .conta{
+        padding: 7px;
+    }
+    .conta:hover li{
+        display: flex;
+        position: absolute;
+       
+      }
+    
+      .conta li>a:hover{
+        background-color: red;
+      }
+    
+      .listconta li{
+        display: none;
+        position: relative;
+        border: 1px solid red;
+        border-radius: 3px;
+        width: 35%;
+      }
 
+     
 
-.whatsapp, .face, .insta, .x{
-    width: 5%;
-    height: 15%;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    position: relative;
-    top: 35%;
-    left: 35%;
-}
-
-#vinculos{
-    grid-column-start: 2;
-    align-content: center;
-   
-}
-
-.derechos{
-    color: black;
-    font-size: 1vw;
-}
-
-.logo{
-    width: 25%;
-    height: 45%;
-   position: relative;
-   left: 25%;
-   top:25%
-}
