@@ -68,41 +68,7 @@ h4{
     
 
 @media (max-width: 900px){
-    .nav-barra, .nav i{
-        display: block;
-    }
-    .nav-menu{
-        flex-direction: column;
-        background-color: #e9ebef;
-        position:fixed;
-        left:0;
-        top: 48px;
-        width:100%;
-        padding:05px 0;
-        align-items: center;
-        height: calc(100%-48px);
-        overflow-y: auto;
-        display: block;
-        left:100%;
-        
-    }
-    .menu-hamburguesa:checked + .nav-menu{
-        left:0%
-    }*/
-    .nav ul li{
-        line-height: 0px;
-    }
-    .nav ul li a{
-        font-size: 18px;
-        padding:10px
-    }
-    .header img{
-        width: 120px;
-        margin-left: 20px;
-        padding-top: 2px;
-        display: flex;
-        align-items: center;
-    }
+    
     .aporte{
         height: fit-content;
     }

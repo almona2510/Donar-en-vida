@@ -107,10 +107,16 @@ header {
   list-style: none;
   text-decoration: none;
   position: relative;
+
+  a{
+    padding: 3%;
+  }
+ 
 }
 
 .nosotros ul>li{
   margin-top: 10%;
+  
 }
 
 .listnosotros ul {
@@ -434,6 +440,20 @@ footer {
 
 /*Media Query: Tablet*/
 @media (max-width: 900px) {
+
+header {
+  height: 110px;
+
+  nav{
+   margin-top: -50px;
+
+   .nosotros{
+    margin-top: 2px;
+   }
+  }
+}
+
+
   h3 {
     font-size: 1.2em;
   }
