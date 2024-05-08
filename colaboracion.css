@@ -78,9 +78,11 @@ h4{
         display: block;
 
     }
+
+
     .nav-menu{
         flex-direction: column; 
-        left:10px;
+        left:0px;
         top: 100px;
         height: 200px;
         position: fixed;
@@ -101,7 +103,7 @@ h4{
         }
         
         .label{
-        margin-left: 170px;
+        margin-left: 150px;
     }
        
     }
@@ -185,7 +187,7 @@ h4{
 }  
 @media (max-width:600px){
     .label{
-        position: fixed;
+        position: static ;
         left: 0;
         top: 70px;
         display: block;
@@ -217,10 +219,12 @@ h4{
 
     .nav-menu ul{
         display: none;
+        
     }
 
     .menu-hamburguesa:checked + .nav-menu{ 
-        top:-25%
+        top:-25%;
+        
     }*/
     
     

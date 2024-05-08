@@ -58,10 +58,10 @@ header{
 
 #nuestrahistoria{
  display: grid;
- height: 100%;
+ height: 99%;
  grid-template-rows: 0.2fr 1fr;
  text-align: center;
- margin-top: -0.1%;
+ margin-top: -1%;
  background-color: #F0830E;
 }
 
