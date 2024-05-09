@@ -510,6 +510,10 @@ header {
     grid-template-columns: 1fr;
   }
 
+  .niño{
+    width: 80%;
+  }
+
   #ahijados {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
