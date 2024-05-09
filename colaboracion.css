@@ -71,27 +71,20 @@ h4{
     .banner-texto{
         height: 100%;
     }
-     .label{
-        position: fixed;
-        left: 0;
-        top: 70px;
+    .label{
+        position:absolute;
+        left: 5%;
+        top: 75px;
         display: block;
 
     }
-
-
     .nav-menu{
-        flex-direction: column; 
-        left:0px;
-        top: 100px;
-        height: 200px;
-        position: fixed;
+        position: absolute;
+        flex-direction: column;
+        top: 110px; 
         display: block;
-        left: -3%;
+        left:2%;
     
-        
-        
-
        .nosotros{
          margin-top:17px;
          margin-bottom: 15px;
@@ -103,19 +96,17 @@ h4{
         }
         
         .label{
-        margin-left: 150px;
-    }
-       
-    }
-
-    .nav-menu ul{
-        display: none;
+        margin-left: 170%;
+    }  
     }
 
     
-    .menu-hamburguesa:checked + .nav-menu{
+
+    .menu-hamburguesa:checked + .nav-menu{ 
+        display: none;
+        top:-300px;
        
-        left:-100%
+        
     }*/
     
     .header img{
@@ -186,21 +177,20 @@ h4{
     
 }  
 @media (max-width:600px){
+
     .label{
-        position: static ;
-        left: 0;
-        top: 70px;
+        position:absolute;
+        left: 5%;
+        top: 75px;
         display: block;
 
     }
     .nav-menu{
-        flex-direction: column; 
-        left:10px;
-        top: 100px;
-        height: 200px;
-        position: fixed;
+        position: absolute;
+        flex-direction: column;
+        top: 110px; 
         display: block;
-        left: -7%;
+        left:-4%;
     
        .nosotros{
          margin-top:17px;
@@ -213,19 +203,19 @@ h4{
         }
         
         .label{
-        margin-left: 170px;
+        margin-left: 170%;
     }  
     }
 
-    .nav-menu ul{
-        display: none;
-        
-    }
+    
 
     .menu-hamburguesa:checked + .nav-menu{ 
-        top:-25%;
+        display: none;
+        top:-300px;
+       
         
     }*/
+    
     
     
     .aporte h1{

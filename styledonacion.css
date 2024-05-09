@@ -248,10 +248,11 @@ header {
 .conta ul {
   display: block;
   position: relative;
-
-  li {
+ 
+  /* se le da la ubicacion y los margenes a la sublista de contactos */
+  li { 
     position: relative;
-    margin-top: 15%;
+    margin-top: 20%;
     width: 250%;
   }
 }
@@ -261,14 +262,17 @@ header {
 
 }
 
+/* el hover indica que cuando se pase el cursor sobre el sublistado va a tomar el color #FBDD7B */
 .conta li>a:hover {
   background-color: #FBDD7B;
 }
 
+/* se le indica al sublistado que no este visible */
 .listconta li {
   display: none;
   position: relative;
 
+  /* le da un color de fondo a los botones del menu del navegador */
   a {
     background-color: gainsboro;
   }
