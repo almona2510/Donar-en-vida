@@ -100,7 +100,9 @@ h4{
     }  
     }
 
-    
+    .nav-menu ul{
+        display: none;
+       }
 
     .menu-hamburguesa:checked + .nav-menu{ 
         display: none;
@@ -207,7 +209,9 @@ h4{
     }  
     }
 
-    
+       .nav-menu ul{
+        display: none;
+       }
 
     .menu-hamburguesa:checked + .nav-menu{ 
         display: none;
