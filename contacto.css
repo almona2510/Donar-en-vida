@@ -14,26 +14,6 @@ body{
     margin: 0;
     
 }
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #ffffff;
-    padding: 0px 10px;
-    display: flex;
-    justify-content: space-between;
-    z-index: 100;
-    margin: 0 auto;
-    max-width: 1300px;
-}
-.header img{
-    width: 140px;
-    margin-left: 30px;
-    padding-top: 5px;
-    display: block;
-}
-
 
 .fotoportada img, .imagenizq img{
     width: 100%;
@@ -209,13 +189,7 @@ body{
 
 @media (max-width: 900px){
    
-    .header img{
-        width: 120px;
-        margin-left: 20px;
-        padding-top: 2px;
-        display: flex;
-        align-items: center;
-    }
+
     .contactanos{
         height: auto;
     }

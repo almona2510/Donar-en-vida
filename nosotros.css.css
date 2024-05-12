@@ -27,20 +27,23 @@ body{
 
 
 /*header*/
-.img-logo{
-  max-width: 3em;
-  vertical-align: middle;/*La imagen se ubica en el centro del contenedor*/
+.header{
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  margin: 0 auto;
+  max-width: 1300px;
 }
-
-header{
-  align-items: center;
-  justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;/*(sombra parte inferior)*/
-}
-.header-logo img{
-  max-width: 8em;
-  vertical-align: middle;
-  margin: 0 1em;
+.header img{
+  width: 140px;
+  margin-left: 30px;
+  padding-top: 5px;
+  display: block;
 }
 
 /* cuerpo */
@@ -58,10 +61,10 @@ header{
 
 #nuestrahistoria{
  display: grid;
- height: 99%;
+ height: 97%;
  grid-template-rows: 0.2fr 1fr;
  text-align: center;
- margin-top: -1%;
+ margin-top: 0%;
  background-color: #F0830E;
 }
 
@@ -82,9 +85,8 @@ header{
  }
 
 
-.manos{
-  width: 100%;
-  height: 500px;  
+#manos{
+   height: 97%;  
 }
 
 .nos{
@@ -130,6 +132,11 @@ header{
   column-gap: 1%;
   row-gap: 10px;
   margin-top: 1%;
+}
+
+.ahijados{
+  text-align: center;
+  color: #FBDD7B;
 }
 
 .ahijado1 .ahijado2 .ahijado3 .ahijado4 .ahijado5 .ahijado6 .ahijado7 .ahijado8{
